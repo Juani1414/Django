@@ -1,0 +1,4 @@
+cp -r '/home/juanita/Documentos/ProyectosDjango/Tiendaonline' '/home/juanita/Documentos/Django' 
+git add *
+git commit -m "Django"
+git push -u origin main
