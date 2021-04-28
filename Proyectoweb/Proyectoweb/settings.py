@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'proyectowebapp',
     'servicios',
     'blog',
+    'contacto',
+    'tienda',
+    'carro',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +133,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL='/media/'
 MEDIA_ROOT=BASE_DIR / 'media'
+
+#Configuracion del correo 
+
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_USE_TLS=True
+EMAIL_PORT=587
+EMAIL_HOST_USER="arielleal2206@gmail.com"
+EMAIL_HOST_PASSWORD="Futv27700+"
+

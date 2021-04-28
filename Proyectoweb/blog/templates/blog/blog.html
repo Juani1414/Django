@@ -51,7 +51,7 @@
 
           {% for categoria in post.categorias.all %}
 
-            {{categoria.nombre}} &nbsp; &nbsp; &nbsp;
+            <a href="{% url 'categoria' categoria.id %}" style="color: white; text-decoration: underline;" >{{categoria.nombre}} </a>   &nbsp; &nbsp; &nbsp;
 
           {% endfor %}
 
@@ -65,3 +65,6 @@
       </div>
     </section>
 {% endblock %}
+
+
+
